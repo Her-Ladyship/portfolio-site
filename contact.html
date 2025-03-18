@@ -34,7 +34,7 @@
     <section class="contact-container">
         <h2 class="glowing-text">Contact Me</h2>
         <div class="gold-frame">
-            <form action="https://formspree.io/f/xkgjgdql" method="POST">
+            <form id="contact-form">
                 <input type="hidden" name="_next" value="home.html">
                 <input type="text" name="name" placeholder="Your Name (Optional)" class="contact-input">
                 <input type="email" name="email" placeholder="Your Email" required class="contact-input">
@@ -47,5 +47,26 @@
     <footer>
         <p>&copy; 2025 Her Ladyship Games. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default redirection
+        
+            const form = event.target;
+            const formData = new FormData(form);
+        
+            fetch("https://formspree.io/f/xkgjgdql", {
+                method: "POST",
+                body: formData,
+                headers: { "Accept": "application/json" }
+            }).then(response => {
+                if (response.ok) {
+                    window.location.href = "home.html"; // Redirect to home page
+                } else {
+                    alert("Something went wrong. Please try again.");
+                }
+            }).catch(error => alert("Error: " + error));
+        });
+        </script>
+        
 </body>
 </html>
