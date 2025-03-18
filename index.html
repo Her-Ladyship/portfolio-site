@@ -6,10 +6,15 @@
     <title>Her Ladyship Games</title>
     <link rel="stylesheet" href="css/intro.css">
     <script>
-        // Redirect to main homepage after fade-in
-        setTimeout(function() {
-            window.location.href = 'home.html';
-        }, 3000); // Adjust time as needed (3000ms = 3 seconds)
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.body.classList.add("fade-out");
+            }, 4500); // Start fade-out effect after a longer pause
+
+            setTimeout(function() {
+                window.location.href = 'home.html';
+            }, 6000); // Redirect after fade-out
+        });
     </script>
     <style>
         body {
@@ -20,22 +25,30 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        .fade-out {
+            opacity: 0;
         }
         
         #logo {
             opacity: 0;
-            width: 60%; /* Adjust size as needed */
-            max-width: 500px;
-            animation: fadeIn 3s ease-in-out forwards;
+            height: 90vh; /* Adjust height to fit the screen better */
+            width: auto; /* Maintain aspect ratio */
+            max-height: 1000px; /* Prevent it from being too large */
+            animation: fadeInPauseFadeOut 5s ease-in-out forwards;
         }
         
-        @keyframes fadeIn {
+        @keyframes fadeInPauseFadeOut {
             0% { opacity: 0; }
-            100% { opacity: 1; }
+            30% { opacity: 1; }
+            70% { opacity: 1; } /* Pause at full opacity */
+            100% { opacity: 0; }
         }
     </style>
 </head>
 <body>
-    <img id="logo" src="assets/logo-placeholder.png" alt="Her Ladyship Games Logo">
+    <img id="logo" src="assets/logo1.png" alt="Her Ladyship Games Logo">
 </body>
 </html>
