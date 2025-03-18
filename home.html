@@ -3,29 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Her Ladyship Games</title>
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- Load Custom Fonts -->
+    <style>
+        @font-face {
+            font-family: 'DyerArtsAndCrafts';
+            src: url('fonts/Dyer Arts and Crafts.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Rajdhani';
+            src: url('fonts/Rajdhani-Regular.ttf') format('truetype');
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1 class="title">Her Ladyship Games</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Reboot</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section>
-        <h2>Showcasing My Work</h2>
-        <p>This is where my awesome game projects will be displayed.</p>
+
+    <section class="hero">
+        <div class="hero-image-container"> <!-- This container now applies the frame correctly -->
+            <img src="assets/bigpit1.jpg" alt="Placeholder Image" class="hero-image">
+        </div>
+        <div class="gold-frame">
+            <h2>Welcome to the Future of Gaming</h2>
+            <p>Explore the worlds I've created.</p>
+        </div>
     </section>
-    
+
+    <section class="content">
+        <div class="gold-frame">
+            <h2>Showcasing My Work</h2>
+            <p>Placeholder text describing game projects. This area will be expanded with more details later.</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Her Ladyship Games. All rights reserved.</p>
     </footer>
 </body>
 </html>
