@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!-- Load Custom Fonts -->
+        <style>
+            @font-face {
+                font-family: 'DyerArtsAndCrafts';
+                src: url('fonts/Dyer Arts and Crafts.ttf') format('truetype');
+            }
+            
+            @font-face {
+                font-family: 'Rajdhani';
+                src: url('fonts/Rajdhani-Regular.ttf') format('truetype');
+            }
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Her Ladyship Games</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Her Ladyship Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Reboot</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <h2 class="glowing-text">Contact Me</h2>
+        <div class="gold-frame">
+            <form action="https://formsubmit.co/sinnjared@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="home.html">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Your Name (Optional)" class="contact-input">
+                <input type="email" name="email" placeholder="Your Email" required class="contact-input">
+                <textarea name="message" placeholder="Your Message" required class="contact-textarea"></textarea>
+                <button type="submit" class="contact-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Her Ladyship Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>
