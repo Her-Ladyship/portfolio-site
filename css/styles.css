@@ -1,0 +1,63 @@
+/* styles.css - Dark Cyberpunk Art Deco Theme */
+
+body {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #111, #222);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ff007f;
+    box-shadow: 0px 4px 10px rgba(255, 0, 127, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff007f;
+    text-shadow: 2px 2px 5px rgba(255, 0, 127, 0.6);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00eaff;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+}
+
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+footer {
+    background: linear-gradient(90deg, #222, #111);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #888;
+    border-top: 3px solid #00eaff;
+    box-shadow: 0px -4px 10px rgba(0, 234, 255, 0.3);
+}
