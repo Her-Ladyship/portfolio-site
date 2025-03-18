@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Her Ladyship Games</title>
+    <link rel="stylesheet" href="css/intro.css">
+    <script>
+        // Redirect to main homepage after fade-in
+        setTimeout(function() {
+            window.location.href = 'home.html';
+        }, 3000); // Adjust time as needed (3000ms = 3 seconds)
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        #logo {
+            opacity: 0;
+            width: 60%; /* Adjust size as needed */
+            max-width: 500px;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section>
-        <h2>Showcasing My Work</h2>
-        <p>This is where my awesome game projects will be displayed.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-    </footer>
+    <img id="logo" src="assets/logo-placeholder.png" alt="Her Ladyship Games Logo">
 </body>
 </html>
