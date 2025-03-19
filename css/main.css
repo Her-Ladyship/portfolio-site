@@ -330,6 +330,12 @@ nav ul li a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
+/* Game Pages */
+.game-page-container {
+    text-align: center;
+    padding: 50px;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(90deg, #222, #111);
