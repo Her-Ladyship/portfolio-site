@@ -223,6 +223,17 @@ nav ul li a:hover {
     100% { opacity: 1; }
 }
 
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff007f, -2px -2px #00eaff; }
+    50% { text-shadow: -2px -2px #ff007f, 2px 2px #00eaff; }
+    100% { text-shadow: 2px -2px #ff007f, -2px 2px #00eaff; }
+}
+
+.glitch-text {
+    display: inline-block;
+    animation: glitch 0.5s infinite alternate;
+}
+
 /* Lime Green Frame on Home Page */
 .hero-image-container {
     width: 75%;
@@ -252,6 +263,16 @@ nav ul li a:hover {
     background: black;
     border: 4px solid #00eaff;
     box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8), 0px 0px 10px rgba(0, 234, 255, 0.6);
+}
+
+/* Featured Game Image */
+.featured-game-img {
+    width: 100%;
+    max-width: 300px; /* Keeps it from getting too big */
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.6);
 }
 
 /* Games Section */
