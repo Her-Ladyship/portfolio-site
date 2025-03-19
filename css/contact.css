@@ -97,6 +97,7 @@ nav ul li a:hover {
     color: #00eaff;
     text-shadow: 0px 0px 10px rgba(0, 234, 255, 0.8);
     animation: flicker 1.5s infinite alternate;
+    margin-bottom: 60px;
 }
 
 @keyframes flicker {
@@ -115,7 +116,15 @@ nav ul li a:hover {
     width: 80%;
 }
 
-.contact-input {
+.gold-frame p {
+    margin-bottom: 60px;
+}
+
+.gold-frame a {
+    text-decoration: none;
+}
+
+.contact-input, .contact-textarea {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
@@ -129,17 +138,7 @@ nav ul li a:hover {
 }
 
 .contact-textarea {
-    width: 90%;
-    height: 200px; /* Increased height for more lines */
-    padding: 10px;
-    margin: 10px 0;
-    background: black;
-    color: #00eaff;
-    border: 2px solid #ff007f;
-    font-size: 1.2em;
-    font-family: 'Rajdhani', sans-serif;
-    box-shadow: 0px 0px 10px rgba(255, 0, 127, 0.5);
-    transition: all 0.3s ease-in-out;
+    height: 200px;
     resize: vertical;
 }
 
@@ -160,6 +159,7 @@ nav ul li a:hover {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.6);
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .contact-button:hover {

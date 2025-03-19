@@ -47,6 +47,7 @@
     <footer>
         <p>&copy; 2025 Her Ladyship Games. All rights reserved.</p>
     </footer>
+
     <script>
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default redirection
@@ -60,13 +61,12 @@
                 headers: { "Accept": "application/json" }
             }).then(response => {
                 if (response.ok) {
-                    window.location.href = "home.html"; // Redirect to home page
+                    window.location.href = "thank-you.html"; // Redirect to home page
                 } else {
                     alert("Something went wrong. Please try again.");
                 }
             }).catch(error => alert("Error: " + error));
         });
-        </script>
-        
+    </script>       
 </body>
 </html>
