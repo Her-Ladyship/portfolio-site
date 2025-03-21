@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Get all carousel items from the games page
+    // Add in here to link to game pages
     const carouselItems = [
         {
             title: "Don't Get Wet!",

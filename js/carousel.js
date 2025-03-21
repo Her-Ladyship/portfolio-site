@@ -20,17 +20,12 @@ function updateGameTitle() {
     const items = document.querySelectorAll(".carousel-item");
     const gameTitle = document.getElementById("game-title");
     
-    // Calculate the current front-facing index
     const frontIndex = Math.round((360 - (angle % 360)) / rotationAmount) % items.length;
-    
-    // Get the game title from the data attribute
     const title = items[frontIndex].getAttribute("data-title");
     
-    // Update the game title text
     gameTitle.innerText = title;
-    gameTitle.style.opacity = 1; // Fade in
+    gameTitle.style.opacity = 1;
 }
 
-// Position items initially
 positionItems();
-updateGameTitle(); // Ensure the first game's title is shown on load
+updateGameTitle();

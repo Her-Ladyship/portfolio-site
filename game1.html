@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game One - Her Ladyship Games</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <h1 class="title">Her Ladyship Games</h1>
@@ -22,17 +24,14 @@
     <section class="game-page-container">
         <h2 class="glowing-text">Don't Get Wet!</h2>
 
-    <!-- Logo & Gameplay Video Side by Side -->
-    <div class="game-media-container">
-        <img src="assets/logo1.png" alt="Her Ladyship Logo" class="game-logo">
-        <video class="game-video" autoplay loop muted>
-        <source src="assets/witch_vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </div>
+        <div class="game-media-container">
+            <img src="assets/logo1.png" alt="Her Ladyship Logo" class="game-logo">
+            <video class="game-video" autoplay loop muted>
+            <source src="assets/witch_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
 
-
-        <!-- Game Description -->
         <div class="lime-frame">
             <p><strong>Don't Get Wet!</strong> is a classic 2D platformer, where you help an absent-minded witch collect her missing potion bottles while avoiding water at all costs!</p>
         </div>
@@ -46,37 +45,43 @@
             </ul>
         </div>        
 
-        <!-- Game Screenshots -->
         <div class="game-screenshots">
             <img src="assets/witch1.png" alt="Game Screenshot 1">
-        <img src="assets/witch2.png" alt="Game Screenshot 2">
+            <img src="assets/witch2.png" alt="Game Screenshot 2">
             <img src="assets/witch3.png" alt="Game Screenshot 3">
         </div>
 
-
-        <!-- Download Button -->
         <a href="https://her-ladyship.itch.io/dont-get-wet" class="contact-button" target="_blank">Download Game</a>
 
-        <!-- System Requirements (Optional) -->
         <div class="lime-frame">
             <h3>System Requirements</h3>
-            <ul>
-                <li>It's only about 100MB.</li>
-                <li>I'd imagine you could run it on your toaster if you wanted to.</li>
-            </ul>
+            <p>It's only about 100MB.</p>
+            <p>I'd imagine you could run it on your toaster if you wanted to.</p>
         </div>
 
         <div class="gold-frame">
             <h3>Developer Notes</h3>
-            <p><strong>Did you know?</strong> Witches aren't real.</p>
+            <p>This was the first game of my second year, my first time using Godot, and a solo project. I may have just seen <strong>Wicked</strong> when I was looking for inspiration.</p>
+            <p>I started by knocking up a simple side-scrolling platformer following a YouTube tutorial, and when that was looking good I started on my own version. This was all going swimmingly until...</p>
+            <p>I realised I'd built everything within a single level structure.</p>
+            <p>And since I was still getting to grips with the engine, I didn't have the skills to re-package what I had into a workable level system. So I started again, first by building a main menu interface, and then a level loading system in Godot script.</p>
+            <p>Looking back at it with more experience, the level loading system I had created was complete overkill for the project, but gave me a lot of valuable insights into the less surface-level workings of the Godot engine.</p>
+            <p>Then I quickly rebuilt the level I'd designed before (with a few tweaks here and there), and added a second because by God I was going to have a level transition in there after what I'd been through.</p>
+            <p>And that's <strong>Don't Get Wet!</strong> - a good starter project for this engine, a nice chance to incorporate my own music into a game, and a steep but necessary learning curve to eventually scrabble up.</p>
         </div>
 
-        <!-- Back to Games -->
+        <div class="lime-frame">
+            <h3>Did You Know?</h3>
+            <p>Witches aren't real.</p>
+        </div>
+
         <a href="games.html" class="contact-button">Back to Games</a>
+
     </section>
 
     <footer>
         <p>&copy; 2025 Her Ladyship Games. All rights reserved.</p>
     </footer>
+    
 </body>
 </html>
